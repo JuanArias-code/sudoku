@@ -1,6 +1,5 @@
 # sample
 Solving Sudoku using BFS and pruning
-
 Assignment from "Introduction to Artificial Intelligence," taken Fall 2015
 
 1. Run test_cases.py using Python 3
