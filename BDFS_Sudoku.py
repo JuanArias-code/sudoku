@@ -112,6 +112,8 @@ def solve_bt(board):
 
     if solution:
         print ("Found solution")
+        for row in solution:
+            print (row)
     else:
         print ("No possible solutions")
 
