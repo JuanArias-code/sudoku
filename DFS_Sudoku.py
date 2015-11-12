@@ -100,7 +100,7 @@ class Node:
         # Return list of valid states
         return [Node(state) for state in problem.actions(self.state)]
 
-def depth_first_search(problem):
+def DFS(problem):
     start = Node(problem.initial)
     if problem.goal_test(start.state):
         return start.state
@@ -119,7 +119,8 @@ def depth_first_search(problem):
 def solve_dfs(board):
     print ("\nSolving with DFS...")
     start_time = time.time()
-    solution = backtracking(board, 0)
+    problem = Problem(board)
+    solution = DFS(problem)
     elapsed_time = time.time() - start_time
 
     if solution:
@@ -129,4 +130,4 @@ def solve_dfs(board):
     else:
         print ("No possible solutions")
 
-    print ("\nElapsed time: " + str(elapsed_time))
+    print ("Elapsed time: " + str(elapsed_time))
