@@ -105,9 +105,9 @@ def backtracking(board):
 
 def solve_bt(board):
 
-    print ("Solving with Backtracking DFS...")
+    print ("\nSolving with Backtracking DFS...")
     start_time = time.time()
-    solution = backtracking(board, 0)
+    solution = backtracking(board)
     elapsed_time = time.time() - start_time
 
     if solution:
@@ -117,4 +117,4 @@ def solve_bt(board):
     else:
         print ("No possible solutions")
 
-    print ("\nElapsed time: " + str(elapsed_time))
+    print ("Elapsed time: " + str(elapsed_time))
