@@ -104,7 +104,7 @@ def depth_first_search(problem):
 
     start = Node(problem.initial)
     if problem.goal_test(start.state):
-        return start.state,maximum
+        return start.state
 
     stack = []
     stack.append(start) # Place initial node onto the stack
@@ -112,10 +112,10 @@ def depth_first_search(problem):
     while stack:
         node = stack.pop()
         if problem.goal_test(node.state):
-            return (node.state,maximum)
+            return node.state
         stack.extend(node.expand(problem)) # Add viable states onto the stack
 
-    return (None,maximum)
+    return None
 
 def solve_dfs(board):
     print ("\nSolving with DFS...")
