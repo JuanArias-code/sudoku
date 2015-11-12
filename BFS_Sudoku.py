@@ -131,7 +131,7 @@ def breadth_first_search(problem):
 
     return None
 
-def solve_board(board):
+def solve_bfs(board):
     print ("\nProblem:")
     for row in board:
         print (row)
