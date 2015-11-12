@@ -101,7 +101,6 @@ class Node:
         return [Node(state) for state in problem.actions(self.state)]
 
 def depth_first_search(problem):
-
     start = Node(problem.initial)
     if problem.goal_test(start.state):
         return start.state
