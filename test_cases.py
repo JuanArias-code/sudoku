@@ -12,6 +12,10 @@ board = [[1,5,0,0,4,0],
       [6,3,0,0,2,0],
       [0,2,0,0,3,1]]
 
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -23,6 +27,10 @@ board = [[0,0,0,0,4,0],
       [0,4,0,2,0,3],
       [4,0,0,0,6,5],
       [1,5,6,0,0,0]]
+
+print ("Problem:")
+for row in board:
+      print (row)
 
 solve_bfs(board)
 solve_dfs(board)
@@ -39,6 +47,10 @@ board = [[0,0,9,0,7,0,0,0,5],
       [8,0,0,0,0,0,0,0,0],
       [2,1,0,0,0,0,0,8,7]]
 
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -53,6 +65,10 @@ board = [[0,0,0,8,4,0,6,5,0],
       [1,0,8,5,0,0,0,0,0],
       [6,0,0,0,0,0,0,4,0],
       [0,5,2,0,8,6,0,0,0]]
+
+print ("Problem:")
+for row in board:
+      print (row)
       
 solve_bfs(board)
 solve_dfs(board)
@@ -68,7 +84,11 @@ board = [[9,7,4,2,3,6,1,5,8],
       [8,6,7,1,2,5,3,9,4],
       [2,5,3,6,4,9,8,7,1],
       [4,9,1,8,7,3,6,2,5]]
-      
+
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -83,7 +103,11 @@ board = [[3,0,5,4,2,0,8,1,0],
       [2,4,1,3,0,9,0,6,5],
       [5,0,8,6,7,0,1,9,2],
       [0,9,6,5,1,2,4,0,8]]
-      
+
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -98,7 +122,11 @@ board = [[0,0,2,0,3,0,0,0,8],
       [0,0,0,0,8,0,6,0,5],
       [0,0,0,0,0,0,0,1,3],
       [0,0,5,3,1,0,4,0,0]]
-      
+
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -113,7 +141,11 @@ board = [[0,9,0,3,0,0,0,0,1],
       [0,0,1,0,0,0,0,0,0],
       [5,8,0,0,2,0,0,0,0],
       [2,0,0,0,0,7,0,6,0]]
-      
+
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
@@ -128,7 +160,11 @@ board = [[0,3,9,0,0,0,1,2,0],
       [5,0,0,1,0,9,0,0,3],
       [0,0,0,8,0,5,0,0,0],
       [0,1,4,0,0,0,8,7,0]]
-      
+ 
+print ("Problem:")
+for row in board:
+      print (row)
+
 solve_bfs(board)
 solve_dfs(board)
 solve_bt(board)
