@@ -1,5 +1,6 @@
 from queue import Queue
 import copy
+import time
 
 class Problem(object):
 
@@ -132,16 +133,16 @@ def breadth_first_search(problem):
     return None
 
 def solve_bfs(board):
-    print ("\nProblem:")
-    for row in board:
-        print (row)
+    print ("Solving with BFS...")
+    start_time = time.time()
+    solution = backtracking(board, 0)
+    elapsed_time = time.time() - start_time
 
-    problem = Problem(board)
-    solution = breadth_first_search(problem)
-
-    print ("Solution:")
     if solution:
+        print ("Found solution")
         for row in solution.state:
             print (row)
     else:
         print ("No possible solutions")
+
+    print ("\nElapsed time: " + str(elapsed_time))
