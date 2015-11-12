@@ -83,11 +83,10 @@ class Problem(object):
 
         return options # Return spot's viable options
 
-def backtracking(board,recursions):
-
+def backtracking(board):
     problem = Problem(board)
     if problem.goal_test(board):
-        return board, recursions
+        return board
 
     # Get first empty spot
     row,column = problem.get_spot(problem.type, board)
@@ -97,12 +96,12 @@ def backtracking(board,recursions):
     for option in options:
         board[row][column] = option # Try viable option
         # Recursively fill in the board
-        if backtracking(board, recursions+1):
-            return board, recursions # Returns board if success 
+        if backtracking(board):
+            return board # Returns board if success 
         else:
             board[row][column] = 0 # Otherwise backtracks
 
-    return None, recursions
+    return None
 
 def solve_bt(board):
 
@@ -116,5 +115,4 @@ def solve_bt(board):
     else:
         print ("No possible solutions")
 
-    print ("Recursions: %d" % solution[1])
     print ("Elapsed time: " + str(elapsed_time))
