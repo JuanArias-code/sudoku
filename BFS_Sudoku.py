@@ -110,7 +110,7 @@ class Node:
         next = problem.result(self.state, action)
         return Node(next, action)
 
-def breadth_first_search(problem):
+def BFS(problem):
     # Create initial node of problem tree holding original board
     node = Node(problem.initial)
     # Check if original board is correct and immediately return if valid
@@ -133,9 +133,11 @@ def breadth_first_search(problem):
     return None
 
 def solve_bfs(board):
-    print ("Solving with BFS...")
+    print ("\nSolving with BFS...")
     start_time = time.time()
-    solution = backtracking(board, 0)
+
+    problem = Problem(board)
+    solution = BFS(problem)
     elapsed_time = time.time() - start_time
 
     if solution:
@@ -145,4 +147,4 @@ def solve_bfs(board):
     else:
         print ("No possible solutions")
 
-    print ("\nElapsed time: " + str(elapsed_time))
+    print ("Elapsed time: " + str(elapsed_time))
