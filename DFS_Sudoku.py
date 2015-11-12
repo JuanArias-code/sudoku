@@ -101,7 +101,6 @@ class Node:
         return [Node(state) for state in problem.actions(self.state)]
 
 def depth_first_search(problem):
-    maximum = 0 # Node counter
 
     start = Node(problem.initial)
     if problem.goal_test(start.state):
@@ -111,10 +110,6 @@ def depth_first_search(problem):
     stack.append(start) # Place initial node onto the stack
 
     while stack:
-        # Find maximum number of nodes generated
-        if len(stack) > maximum:
-            maximum = len(stack)
-
         node = stack.pop()
         if problem.goal_test(node.state):
             return (node.state,maximum)
@@ -135,4 +130,3 @@ def solve_dfs(board):
         print ("No possible solutions")
 
     print ("Elapsed time: " + str(elapsed_time))
-    print ("Maximum number of states in stack: " + str(solution[1]))
