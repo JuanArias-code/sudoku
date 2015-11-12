@@ -117,4 +117,4 @@ def solve_bt(board):
     else:
         print ("No possible solutions")
 
-    print ("Elapsed time: " + str(elapsed_time))
+    print ("\nElapsed time: " + str(elapsed_time))
